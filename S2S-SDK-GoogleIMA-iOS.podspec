@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.source            = { :http => 'https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/S2S_GoogleIMA_1.zip'}
     s.platforms = { :ios => "9.0" }
     s.dependency 'GoogleAds-IMA-iOS-SDK'
-    s.dependency 'S2S-SDK'
+    s.dependency 'S2S-SDK', :git => 'https://github.com/gfkse/sensic-s2s-sdk-ios.git', :branch => 'demo-pre-production'
     s.ios.vendored_frameworks = 'S2S_GoogleIMA.xcframework'
     s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.1' }
 end
